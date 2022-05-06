@@ -11,6 +11,7 @@ void Menu::MainMenu(){
     Current c;
     
     do{
+    cout << "\n*********MAIN MENU*************"<< endl;
     cout << "1)Display Current Tasks" << endl;
     cout << "2)Current Task List" << endl;
     cout << "3)Master List" << endl;
