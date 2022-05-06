@@ -1,0 +1,4 @@
+-IC:\Users\adama\Desktop\TaskListCpp\TaskListCpp\TaskListCpp
+-std=c++17
+-target
+
