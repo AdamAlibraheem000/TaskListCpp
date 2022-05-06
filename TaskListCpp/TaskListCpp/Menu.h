@@ -4,7 +4,7 @@ class Menu
 {
 public:
    void MainMenu();
-   int InputValid();
+   static int InputValid();
 
 };
 

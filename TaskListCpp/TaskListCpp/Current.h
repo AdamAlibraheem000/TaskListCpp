@@ -11,7 +11,8 @@ private:
     
 public:
     void Display();
-    string UpdateList();
+    void CurrentMenu();
+    void UpdateList();
 
 };
 

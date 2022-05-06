@@ -1,4 +1,5 @@
 #include "Menu.h"
+#include "Current.h"
 #include<iostream>
 #include<iomanip>
 #include<stdlib.h>
@@ -7,7 +8,8 @@ using namespace std;
 
 void Menu::MainMenu(){
     int input = 0;
-    Menu p;
+    Current c;
+    
     do{
     cout << "1)Display Current Tasks" << endl;
     cout << "2)Current Task List" << endl;
@@ -15,14 +17,14 @@ void Menu::MainMenu(){
     cout << "4)Goal List" << endl;
     cout << "5)Exit Program" << endl;
     
-   input = p.InputValid();
+   input = InputValid();
     
     switch(input){
         case 1: 
-        cout << "Display" << endl;
+        c.Display();
         break;
         case 2:
-        cout << "Current" << endl;
+        c.CurrentMenu();
         break;
         case 3:
         cout << "Master"<< endl;

@@ -62,7 +62,7 @@ AS       := "C:/Program Files/mingw-w64/mingw64/bin/as.exe"
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/Current.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Menu.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/Menu.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Current.cpp$(ObjectSuffix) 
 
 
 
@@ -93,11 +93,11 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Current.cpp$(ObjectSuffix): Current.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Current.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Current.cpp$(DependSuffix) -MM Current.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/adama/Desktop/TaskListCpp/TaskListCpp/TaskListCpp/Current.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Current.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Current.cpp$(PreprocessSuffix): Current.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Current.cpp$(PreprocessSuffix) Current.cpp
+$(IntermediateDirectory)/Menu.cpp$(ObjectSuffix): Menu.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Menu.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Menu.cpp$(DependSuffix) -MM Menu.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/adama/Desktop/TaskListCpp/TaskListCpp/TaskListCpp/Menu.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Menu.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Menu.cpp$(PreprocessSuffix): Menu.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Menu.cpp$(PreprocessSuffix) Menu.cpp
 
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
@@ -105,11 +105,11 @@ $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
 
-$(IntermediateDirectory)/Menu.cpp$(ObjectSuffix): Menu.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Menu.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Menu.cpp$(DependSuffix) -MM Menu.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/adama/Desktop/TaskListCpp/TaskListCpp/TaskListCpp/Menu.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Menu.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Menu.cpp$(PreprocessSuffix): Menu.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Menu.cpp$(PreprocessSuffix) Menu.cpp
+$(IntermediateDirectory)/Current.cpp$(ObjectSuffix): Current.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Current.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Current.cpp$(DependSuffix) -MM Current.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/adama/Desktop/TaskListCpp/TaskListCpp/TaskListCpp/Current.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Current.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Current.cpp$(PreprocessSuffix): Current.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Current.cpp$(PreprocessSuffix) Current.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
