@@ -93,6 +93,8 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
+    <File Name="Current.cpp"/>
+    <File Name="Current.h"/>
     <File Name="Menu.cpp"/>
     <File Name="Menu.h"/>
     <File Name="main.cpp"/>
